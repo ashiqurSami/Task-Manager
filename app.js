@@ -16,11 +16,11 @@ dotEnv.config();
 app.use(cors())
 app.use(helmet())
 app.use(mongoSanitize())
-app.use(hpp())
-app.use(bodyparser.json());
+app.use(hpp());
 app.use(express.json({limit: '50mb'}));
 app.use(express.urlencoded({limit: '50mb'}));
 app.use(limiter)
+app.use(bodyparser.json());
 
 
 const url=`mongodb+srv://${process.env.MONGO_NAME}:${process.env.MONGO_PASS}@notepad.ia1rli9.mongodb.net/`;
