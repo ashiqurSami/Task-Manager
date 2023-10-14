@@ -2,14 +2,7 @@ const nodeMailer=require('nodemailer');
 
 const SendEmailHelper=async(EmailTo,EmailText,EmailSubject)=>{
     let transporter=nodeMailer.createTransport({
-        host: 'mail.teamrabbil.com',
-        port: 25,
-        secure: false,
-        auth: {
-            user: "info@teamrabbil.com",
-            pass: '~sR4[bhaC[Qs'
-        }, tls: {
-            rejectUnauthorized: false
+
         }
     });
 

@@ -11,7 +11,7 @@ router.get("/profile-details",userAuthMiddleWare,userController.profileDetails)
 router.post("/update-profile",userAuthMiddleWare,userController.profileUpdate)
 
 //OTP
-router.get("/verify-email/:email",userController.verifyEmail)
+router.post("/verify-email/:email",userController.verifyEmail)
 
 
 
